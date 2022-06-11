@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class car extends Model
 {
     use HasFactory;
-    protected $table='cars';
-    protected $primarykey='id';
-    protected $fillable=['name','founded','description'];
+    // protected $table='cars';
+    // protected $primarykey='id';
+    // protected $fillable=['name','founded','description'];
     public function carModel(){
         return $this->hasMany(car_model::class,);
     }
